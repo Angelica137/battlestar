@@ -9,7 +9,11 @@ class AlienInvasion:
     def __init__(self):
         """Initialise the game and create game rss"""
         pygame.init()
-        self.screen = pygame.display.set_mode((1200, 800))
+        self.settings = Settings()
+
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height)
+        )
         pygame.display.set_caption("Battlestar")
 
         # Set the background colour.
