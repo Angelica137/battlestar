@@ -8,7 +8,7 @@ class AlienInvasion:
     def __init__(self):
         """Initialise the game and create game rss"""
         pygame.init()
-        self.screen = pygame.display.set_model((1200, 800))
+        self.screen = pygame.display.set_mode((1200, 800))
         pygame.display.set_caption("Battlestar")
 
     def run_game(self):
