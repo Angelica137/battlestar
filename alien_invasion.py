@@ -23,7 +23,6 @@ class AlienInvasion:
         """Start the main loop for the game"""
         while True:
             self._check_events()
-            # Whatch for keyboard and mouse events.
 
             # Redraw the screen during each pass through the loop.
             self.screen.fill(self.settings.bg_color)
