@@ -76,6 +76,10 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+    def _update_aliens(self):
+        """"Update the position of all aliens in the fleet"""
+        self.aliens.update()
+
     def _check_events(self):
         """Respond to keypressess and mouse events."""
         for event in pygame.event.get():
