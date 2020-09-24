@@ -58,7 +58,7 @@ class AlienInvasion:
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
-            self.ship.moving_left == False
+            self.ship.moving_left = False
 
     def _fire_bullet(self):
         """Create a new bullet and add it to the bullets group."""
