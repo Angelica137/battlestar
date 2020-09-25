@@ -129,14 +129,16 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             self.stats.ships_left -= 1
 
-        self.aliens.empty()
-        self.bullets.empty()
+            self.aliens.empty()
+            self.bullets.empty()
 
-        self._create_fleet()
-        self.ship.center_ship()
+            self._create_fleet()
+            self.ship.center_ship()
 
-        # Pause for a bit each time a ship is destroyed
-        sleep(0.5)
+            # Pause for a bit each time a ship is destroyed
+            sleep(0.5)
+        else:
+            self.stats.game_active = False
 
     def _check_aliens_bottom(self):
         """Check is any aliens touch the bottom of the screen"""
