@@ -109,6 +109,9 @@ class AlienInvasion:
         # Check for any bullets colliding with aliens
         collisions = pygame.sprite.groupcollide(
             self.bullets, self.aliens, True, True)
+        if collisions:
+            self.stats.score += self.settings.alien_points
+            self.sb.prep_score()
 
         # Check if all aliens have been destroyed
         if not self.aliens:
