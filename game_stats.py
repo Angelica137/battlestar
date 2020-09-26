@@ -7,7 +7,7 @@ class GameStats:
         self.reset_stats()
 
         # Set game active flag
-        self.game_active = True
+        self.game_active = False
 
     def reset_stats(self):
         """Initialise statistics that can change during the game"""
