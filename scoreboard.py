@@ -60,7 +60,7 @@ class Scoreboard:
         """Turn the level into a rendered image"""
         level_str = str(self.stats.level)
         self.level_image = self.font.render(
-            evel_str, True, self.text_color, self.settings.bg_color)
+            level_str, True, self.text_color, self.settings.bg_color)
 
         # Position the level below the score
         self.level_rect = self.level_image.get_rect()
