@@ -237,6 +237,8 @@ class AlienInvasion:
             bullet.draw_bullet()
         self.aliens.draw(self.screen)
 
+        self.sb.show_score()
+
         # Draw the play button when game is not active
         if not self.stats.game_active:
             self.play_button.draw_button()
