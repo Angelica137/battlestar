@@ -8,3 +8,4 @@ Future fixes
 
 display level: a number is displayed but we got no clue what it means
 display number of lives: a number is deisplyed but no clue what it means
+make the high score stay between sessions
